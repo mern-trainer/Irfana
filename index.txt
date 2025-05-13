@@ -1,0 +1,14 @@
+Hello World!
+
+-> git, github [gitlab, bitbucket];
+
+git -> tool -> version controller
+github -> cloud storage -> collab ->
+
+git init -> Initialize new local repo.
+git add . -> Stage all the changes for commit.
+git add index.txt sample.txt -> Stage specific files.
+
+
+
+
