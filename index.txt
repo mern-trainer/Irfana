@@ -8,6 +8,17 @@ github -> cloud storage -> collab ->
 git init -> Initialize new local repo.
 git add . -> Stage all the changes for commit.
 git add index.txt sample.txt -> Stage specific files.
+git commit -m "Commit message" -> Commit the changes.
+
+config
+
+git config --global user.email "git email" -> add user to local repo
+git config --global user.name "git username" -> add user to local repo
+
+git remote add <remote_custom_name> <remote_url> -> add remote
+
+git push <remote_name> <branch_name> -> add changes
+
 
 
 
