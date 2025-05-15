@@ -1,0 +1,8 @@
+HTML -> Hypertext markup language
+
+layout -> structure -> 
+
+Tag -> Eg: h1, img, div, p
+element -> <h1>content</h1> -> Tag + content
+attributes -> additional information -> src, alt, href
+
