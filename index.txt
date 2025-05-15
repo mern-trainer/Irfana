@@ -19,7 +19,9 @@ git remote add <remote_custom_name> <remote_url> -> add remote
 
 git push <remote_name> <branch_name> -> add
 
-
+git branch -> List of branches
+git branch <new_branch_name> -> create new branch
+git switch <branch_name> -> change branch
 
 
 
