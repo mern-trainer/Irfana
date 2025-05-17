@@ -3,7 +3,7 @@
         <title>SAMPLE SITE</title>
     </head>
     <body>
-        <h1>Heading 1</h1>
+        <!-- <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
         <h4>Heading 4</h4>
@@ -23,13 +23,132 @@
         <a href="https://google.in" target="_blank">Google.com</a>
 
         <button>Click</button>
-        <!-- Media -->
+        Media
         
-        <!-- <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"> -->
+        <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
         <img src="./tree.png" alt="Tree.png" height="300" width="800">
 
         <video src="./video.webm" height="400" width="700" controls loop autoplay muted poster="./tree.png"></video>
 
-        <audio src="./audio.mp3" controls loop autoplay muted></audio>
+        <audio src="./audio.mp3" controls loop autoplay muted></audio> -->
+
+        <!-- LIST, TABLE, FORM -->
+
+        <!-- 3 Type -->
+         <!-- Ordered List -->
+          <!-- Unordered List -->
+           <!-- Definition List -->
+
+        <ol type="I">
+            <li>ITEM 1</li>
+            <ol type="A">
+                <li>ITEM 1.1</li>
+                <li>ITEM 1.2</li>
+            </ol>
+            <li>ITEM 2</li>
+            <ol type="A">
+                <li>ITEM 2.1</li>
+                <ol type="A">
+                    <li>ITEM 1.1</li>
+                    <li>ITEM 1.2</li>
+                </ol>
+                <li>ITEM 2.2</li>
+            </ol>
+            <li>ITEM 3</li> 
+        </ol>
+
+        <ul>
+            <li>ITEM 1</li>
+            <ul>
+                <li>ITEM 1.1</li>
+                <ul>
+                    <li>ITEM 1.1</li>
+                    <li>ITEM 1.2</li>
+                </ul>
+                <li>ITEM 1.2</li>
+            </ul>
+            <li>ITEM 2</li>
+            <li>ITEM 3</li>
+        </ul>
+
+        <dl>
+            <dt>HTML</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil provident ducimus deserunt assumenda accusamus. Delectus expedita, repudiandae amet in excepturi enim ipsa architecto soluta! Consectetur asperiores vero adipisci quaerat ad.</dd>
+            <dt>CSS</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quos harum. Unde distinctio ipsum, laudantium harum expedita porro dolorum non quod nobis nulla facere. Atque dicta omnis quos tempora soluta.</dd> 
+        </dl>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>No:</th>
+                    <th>DOB</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Current Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td rowspan="2">26-05-2002</td>
+                    <td>John</td>
+                    <td>20</td>
+                    <td>New York</td>
+                    <td>India</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane</td>
+                    <td>21</td>
+                    <td colspan="2"><center>London</center></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>06-01-2005</td>
+                    <td>Jack</td>
+                    <td>22</td>
+                    <td>Paris</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>30-10-2000</td>
+                    <td>Jill</td>
+                    <td>23</td>
+                    <td>Tokyo</td>
+                    <td>Japan</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- FORM -->
+
+        <!-- text, numbers, color, file, checkbox, ratio, date, time,  -->
+
+        <form>
+            <!-- <label for="name">Name</label> -->
+            <!-- <input type="text" id="name" name="name" placeholder="Eg: John" required>
+            <input type="number" name="number" required>
+            <input type="email" name="email" required> -->
+            <input type="password">
+            <input type="datetime-local">
+            <input type="color">
+            <input type="file">
+
+            <input type="checkbox" name="electronics"> TV
+            <input type="checkbox" name="electronics"> Mobile
+            <input type="checkbox" name="electronics"> Laptop
+            <input type="checkbox" name="electronics"> Radio
+
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Others
+
+            <input type="range" value="click">
+
+            <button type="submit">submit</button>
+        </form>
     </body>
 </html>
