@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Styling</title>
+    <style>
+        /* selectors */
+        /* 
+            universal selector > Apply styles to all elements
+            element selector > Apply styles using element name
+            class selector > Apply styles using class name
+            id selector > Apply styles using id name
+            combinator selector > Apply styles using combinator -> child selector
+            group selector > Apply styles using group of selectors - comma separated
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color: green;
+            background-color: yellow;
+        }
+        #demo1{
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .demo{
+            color: gray;
+            background-color: black;
+        }
+        .container .sample{
+            color: red;
+            background-color: yellow;
+        }
+        .box1, .box2, .box3{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: green;
+        }
+       .box3{
+            background-color: blue;
+       }
+    </style>
+</head>
+<!-- css -->
+<!-- 3 methods -->
+<!-- inline, internal, external -->
+<!-- Inline -->
+ <!-- Block elements -> full width -->
+ <!-- Inline elements -> only content -->
+<body>
+    <!-- <h1 style="color: red; font-size: 50px; font-style: italic; font-weight: 400; ">Hello World!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur <pre> adipisicing</pre> elit. Soluta officiis, numquam pariatur odit voluptatibus facere consequuntur, earum modi nesciunt vero aspernatur. Consequatur doloribus ut expedita non atque provident quasi accusamus.</p>
+    <div>
+        sdfsdf
+    </div>
+    <section>
+sdsdfsdf
+    </section>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <h1></h1> -->
+    <!-- <div style="height: 100px; background-color: rgb(180, 209, 93); width: 100px;">
+
+    </div> -->
+    <h1 id="demo1">Hey</h1>
+    <p class="demo">Hello</p>
+    <h1>Hello World</h1>
+    <div class="demo">Hellooooo</div>
+
+    <div class="container">
+        <div class="sample">SAMPLE 1</div>
+    </div>
+    <div class="sample">SAMPLE 2</div>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    </div>
+</body>
+</html>
