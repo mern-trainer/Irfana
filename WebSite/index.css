@@ -14,6 +14,9 @@ header{
     justify-content: space-between;
     align-items: center;
     padding-inline: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .nav{
@@ -38,6 +41,12 @@ header{
     color: #fff;
 }
 
+/* psudo class */
+.hero-container button:hover{
+    color: gray;
+    cursor: pointer;
+}
+
 .hero-container .content{
     display: flex;
     padding-top: 100px;
@@ -47,10 +56,50 @@ header{
     gap: 20px;
 }
 
-.container{
-    width: 200px;
-    height: 200px;
-    background-color: #000;
-    /* transform: scale(0.6); */
-    /* transform: rotate(20deg); */
+.text-center{
+    text-align: center;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    gap: 2px;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.image-container .bottom{
+    display: flex;
+    gap: 6px;
+}
+
+.centerfy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top img, .left img, .right img{
+    height: 400px;
+}
+
+.sale-container .content{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    max-width: 400px;
+    z-index: 1;
+}
+
+.sale-container img{
+    width: 100%;
+}
+
+.sale-container{
+    position: relative;
 }
