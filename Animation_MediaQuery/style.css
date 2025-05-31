@@ -1,0 +1,162 @@
+/* Media Query */
+
+/* 
+    xs: < 576px
+    sm: > 576px
+    md: > 768px
+    lg: > 992px
+    xl: > 1200px
+    xxl: > 1400px
+*/
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #ddd;
+    font-family: "Syne", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: white;
+    padding-inline: 20px;
+}
+
+header .logo img{
+    height: 50px;
+}
+
+header .login{
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+    padding-inline: 15px;
+    padding-block: 10px;
+    font-family: "Syne", sans-serif;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+header .signup {
+    border: none;
+    background-color: gray;
+    border-radius: 8px;
+    padding-inline: 15px;
+    padding-block: 10px;
+    color: white;
+    
+    font-family: "Syne", sans-serif;
+}
+
+header .menu{
+    display: none;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+    header .menu{
+        display: block;
+    }
+    header .bars{
+        display: none;
+    }
+    .card-container {
+        flex-direction: row;
+    }
+}
+
+
+
+/* @media screen and (min-width: 576px){
+    body{
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 992px){
+    body{
+        background-color: yellow;
+    }
+} */
+
+
+/* ---------------------------------------------------------------- */
+
+/* Animation */
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* 0% 100% */
+
+@keyframes move {
+    /* from{
+        left: 0;
+    }
+    to{
+        left: 500px;
+        border-radius: 100px;
+        scale: 2;
+    } */
+    0%, 100%{
+        left: 0;
+        top: 0;
+    }
+    25%{
+        top: 0;
+        left: 300px;
+    }
+    50%{
+        left: 300px;
+        top: 300px;
+    }
+    75%{
+        left: 0;
+        top: 300px;
+    }
+}
+
+.spinner{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 5px solid gray;
+    border-radius: 50px;
+    border-inline-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
