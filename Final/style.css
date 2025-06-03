@@ -1,0 +1,55 @@
+/* Gradient */
+
+/* Linear and Radial */
+
+/* Linear */
+
+/* 
+    to right
+    to left
+    to top
+    to bottom
+    to top right
+    to top left
+    to bottom right
+    to bottom left
+*/
+
+.linear{
+    height: 300px;
+    background: linear-gradient(to bottom left, violet, indigo, blue, green, yellow, orange, red);
+}
+
+.radial{
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+    background: radial-gradient(red, green, blue);
+}
+
+.grid-system{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 50px);
+}
+
+.grid-item{
+    background-color: red;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1/3;
+    /* grid-row-start: 1;
+    grid-row-end: 4; */
+    grid-row: 1/4;
+}
+
+.grid-item-top{
+    background-color: green;
+    grid-column: 3/7;
+    grid-row: 1/3;
+}
+.grid-item-bottom{
+    background-color: blue;
+    grid-column: 3/7;
+    grid-row: 3/5;
+}
